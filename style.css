@@ -8,7 +8,6 @@
 .nav-link {
     text-transform: uppercase;
     font-size: 18px;
-	
 } 
 .logo img{
 	width:130px;
@@ -22,6 +21,7 @@
 }
 #slider{
 	background:url(images/banner.jpg);
+	background-repeat: no-repeat;
 }
 .carousel-item{
 	padding:100px;
@@ -39,6 +39,7 @@
 }
 .carousel-item h4{
 	font-size:36px;
+	margin-top: 10px;
 }
 .carousel-item span{
 	color:#87d37c;
@@ -52,7 +53,6 @@
 .carousel-indicators .active {
 	background-color:#87d37c
 }
-
 #about{
 	color:#030303;
 	padding:90px;
@@ -68,6 +68,9 @@
 	margin:0 auto;
 	margin-bottom:50px;
 }
+.about-icon {
+	margin-bottom: 30px;
+}
 .about-icon i{
 	font-size:50px;
 	padding-bottom:15px;
@@ -75,7 +78,6 @@
 .about-icon h3{
 	text-transform:uppercase;
 	font-size:24px;
-	
 }
 .about-icon p{
 	font-size:14px;
@@ -88,7 +90,9 @@
 	padding:90px;
 	background:#e1e1e1;
 }
-
+.service-icon {
+	margin-top: 30px;
+}
 .service-icon img{
 	width:100%;
 }
@@ -96,8 +100,6 @@
 	position:relative;
 	overflow:hidden;
 } 
-
-
 .service-overlay{
 	position:absolute;
 	background:rgba(0,0,0,.5);
@@ -105,7 +107,6 @@
 	height:100%;
 	top:-100%;
 	transition:.5s;
-	
 }
 .service-icon:hover .service-overlay{
 	top:0;
@@ -130,8 +131,7 @@
 }
 .servicess-icon:hover i{
 	background:#87d37c;
-		border:1px solid #87d37c;
-
+	border:1px solid #87d37c;
 }
 
 * { box-sizing: border-box; }
@@ -156,30 +156,24 @@ body {
   margin:0 5px;
   text-transform:uppercase; 
 }
-
 .button:hover {
   background-color: #87d37c;
   color: #fff;
 }
-
 .button:active,
 .button.is-checked {
   background-color: #87d37c;
 }
 
 /* ---- button-group ---- */
-
 .button-group {
   margin-bottom: 20px;
 }
-
 .button-group:after {
   content: '';
   display: block;
   clear: both;
 }
-
-
 /* ---- .element-item ---- */
 
 .element-item {
@@ -273,10 +267,6 @@ body {
 	padding:4px;
 	text-transform:uppercase;
 }
-
-
-
-
 #counterups{
 	background:url(images/bg.jpg)no-repeat;
 }
@@ -299,12 +289,7 @@ body {
 .count h3{
 	font-size:20px;
 }
-
-
 * { box-sizing: border-box; }
-
-
-
 /* ---- button ---- */
 
 .button {
@@ -319,6 +304,9 @@ body {
   margin-bottom:10px;
   text-transform:uppercase;
   outline-color:none;
+}
+button:focus{
+	outline: none;
 }
 
 .button:hover {
@@ -336,7 +324,8 @@ body {
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  box-shadow: none;
+  outline: none;
 }
 
 /* ---- button-group ---- */
@@ -422,21 +411,16 @@ body {
 	padding:10px 10px;
 	transition: border-color .0s ease-in-out,box-shadow .15s ease-in-out;
 }
-.textarea textarea{
-	
-}
-.textarea button{
-	
-}
 .btn{
 	background:#87D37C;
     color: #fff;
-    padding: 5px 25px;
+    padding: 7px 25px;
 	margin-top: -3px;
+	border: none;
+	outline: none;
 }
 #map {
-      width: 100%;
-      height: 400px;
+      margin-bottom: -20px;
     }
 #footer{
 	background:#000;
@@ -451,5 +435,152 @@ body {
 .footer-icon i:hover{
 	color:#87D37C;
 }
+@media (max-width: 991.98px) { 
+	.carousel-item h3{
+		font-size:30px;
+	}
+	.carousel-item h2{
+		font-size:70px;
+	}
+	.carousel-item h4{
+		font-size:26px;
+	}
+
+	.about-top h2{
+		font-size: 26px;
+	}
+	.about-top p{
+		font-size: 16px;
+	}
+	.about-icon h3{
+		font-size: 18px;
+	}
+	.price-top {
+		width: 120px;
+		height: 120px;
+
+	}
+	.count span {
+		font-size: 30px;
+	}
+	.count h3 {
+		font-size: 16px;
+	}
+	.contact-contanc i {
+		font-size:30px;
+	}
+	.contact-contanc h3{
+		font-size: 16px;
+	}
+	.contact-contanc h4{
+		font-size: 16px;
+	}
+	
+ }
+@media (max-width: 767.98px) { 
+	.carousel-item h2 {
+		font-size: 43px;
+	}
+	.carousel-item h3 {
+		font-size: 25px;
+	}
+	.carousel-item h4 {
+		font-size: 24px;
+	}
+	.isotope-overlay h2 {
+		margin-top: 0;
+	}
+	#pricing {
+		padding-top: 0;
+	}
+	.price-content {
+		margin-bottom: 30px;
+	}
+	.count {
+		margin-top: 30px;
+	}
+	.contact-contanc {
+		margin-top: 30px;
+	}
+ }
+ @media (max-width: 576px){
+	.nav-link {
+		font-size: 14px;
+	}
+	.carousel-item {
+		padding: 50px;
+	}
+	.carousel-item h3 {
+		font-size: 18px;
+	}
+	.carousel-item h2 {
+		font-size: 25px;
+	}
+	.carousel-item h4 {
+		font-size: 18px;
+	}
+	.about-top h2 {
+		font-size: 20px;
+	}
+	.about-top p {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	#about {
+		padding: 30px;
+	}
+	.about-icon i {
+		font-size: 25px;
+		padding-bottom: 10px;
+	}
+	.about-icon h3 {
+		font-size: 16px;
+	}
+	.button {
+		font-size: 12px;
+	}
+	#services {
+		padding: 30px;
+	}
+	#portfolio {
+		padding: 50px 0;
+	}
+	.price-content em {
+		font-size: 25px;
+	}
+	.price-content sup {
+		font-size: 16px;
+	}
+	.price-content span {
+		font-size: 16px;
+	}
+	.price-content p {
+		margin-bottom: 10px;
+	}
+	.price-content ul li{
+		font-size: 14px;
+	}
+	.count span {
+		font-size: 25px;
+	}
+	#counterups {
+		background: none;
+	}
+	#contact-us {
+		padding: 50px 0;
+	}
+	#contact-form {
+		padding: 40px 0;
+	}
+	.contact-contanc {
+		margin-top: 15px;
+	}
+	#pricing {
+		padding: 30px 0;
+	}
+	.counter-content {
+		padding: 40px 0;
+	}
+ }
 
 	
